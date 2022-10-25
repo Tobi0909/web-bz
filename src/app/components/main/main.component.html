@@ -1,0 +1,352 @@
+<div class="news-container">
+    <div class="title">
+        Breaking News
+    </div>
+
+    <ul>
+        <li>
+            <p id="hvn">Time </p>
+        </li>
+
+        <li>
+            <p>Big Sale</p>
+        </li>
+
+        <li>
+            <p>Every Item</p>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Featured Start -->
+<div class="container-fluid pt-5">
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+                <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+                <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Featured End -->
+
+
+
+
+<!-- Offer Start -->
+<div class="container-fluid offer pt-5">
+    <div class="row px-xl-5">
+        <div class="col-md-6 pb-4">
+            <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
+                <img src="assets/img/gift1.jpg" alt="" style="height: 400px;
+                width: 36%;
+                margin-bottom: 12px;">
+                <div class="position-relative" style="z-index: 1;">
+                    <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
+                    <h1 class="mb-4 font-weight-semi-bold">Gift Collection</h1>
+                    <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 pb-4">
+            <div class="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
+                <img src="assets/img/gift2.png" alt="" style="height: 400px;
+                width: 36%;
+                margin-bottom: 12px;">
+                <div class="position-relative" style="z-index: 1;">
+                    <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
+                    <h1 class="mb-4 font-weight-semi-bold">Decorated Collection</h1>
+                    <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Offer End -->
+
+
+<!-- Topselling Start -->
+<div class="container-fluid pt-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2">Best Sale Products</span></h2>
+    </div>
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1" *ngFor="let products of products | slice: 0: 8">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" [src]="products.picture" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">{{products.name}}</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>${{products.price}}</h6>
+                        <h6 class="text-muted ml-2"><del>${{(products.price * 1.2).toFixed(2)}}</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a routerLink="/Detail/{{products.id}}" class="btn btn-sm text-dark p-0"><i
+                            class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <a href="" class="btn btn-sm text-dark p-0"><i
+                            class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topselling End -->
+
+
+<!-- Subscribe Start -->
+<!-- <div class="container-fluid bg-secondary my-5">
+    <div class="row justify-content-md-center py-5 px-xl-5">
+        <div class="col-md-6 col-12 py-5">
+            <div class="text-center mb-2 pb-2">
+                <h2 class="section-title px-5 mb-3"><span class="bg-secondary px-2">Stay Updated</span></h2>
+                <p>Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo
+                    labore labore.</p>
+            </div>
+            <form action="">
+                <div class="input-group">
+                    <input type="text" class="form-control border-white p-4" placeholder="Email Goes Here">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary px-4">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> -->
+<!-- Subscribe End -->
+
+<!-- Start Porfolio  -->
+<section id="Portfolio" class="portfolio">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Portfolio</span></h2>
+        </div>
+
+        <div class="image_app">
+            <ul class="nav nav-pills  justify-content-center mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">ALL</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">GIFT</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">DECORATED</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact2-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact2" type="button" role="tab" aria-controls="pills-contact2"
+                        aria-selected="false">FLOWER</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/christmas_gift/Araucaria_Xmas.jpg" class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images3/motherday gift/Everlasting_Roses/p-love-you-mom-gift-box-with-everlasting-roses-155509-m.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="/assets/img/images3/newyear gift/Coasters/AnyConv.com__p-personalized-new-year-coasters-with-stand-123508-3.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="/assets/img/images3/newyear gift/Hamper/AnyConv.com__p-silver-and-savvy-new-year-hamper-152716-1.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images3/valentine gift/Personalized_Mugs/p-couple-gift-tray-with-shakers-and-personalized-mugs-149272-2.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="/assets/img/images3/valentine gift/Roses/p-beautiful-bouquet-of-8-roses-139430-1.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images3/wedding gift/Pendant/AnyConv.com__p-infinity-heart-rose-gold-finish-pendant-131473-3.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images3/wedding gift/Setalized/AnyConv.com__p-mr-mrs-personalized-anniversary-cushion-set-29232-3.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images3/wedding gift/Pendant/AnyConv.com__p-infinity-heart-rose-gold-finish-pendant-131473-1.jpg"
+                                alt="" class="img_fluid img_fort">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/birthday_gift/Healthy.jpg" class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/birthday_gift/Tasteful.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/birthday_gift/Telescope.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/christmas_gift/Christmas_Cake.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/motherday_gift/Mom.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/motherday_gift/Caricature_Stand.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/newyear_gift/Fruits.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/newyear_gift/Hamper.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/wedding_gift/Pendant.jpg"
+                                alt="" class="img_fluid img_fort">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/birthday_gift/Bottle.jpg" class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/christmas_gift/Araucaria_Xmas.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/christmas_gift/Reindeers.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/christmas_gift/Snowmen.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/christmas_gift/Snowflake.jpg"
+                                class="img_fluid img_fort" style="height: 450px;
+                                width: 110%;">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/newyear_gift/Coasters.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/newyear_gift/Dog.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/valentine_gift/Wooden.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/valentine_gift/Romantic.jpg"
+                                alt="" class="img_fluid img_fort">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab"
+                    tabindex="0">
+                    
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/birthday_gift/Sway.jpg" class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/motherday_gift/Everlasting_Roses.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/valentine_gift/Roses.jpg"
+                                class="img_fluid img_fort">
+                        </div>
+                        <!-- <div class="col-lg-4 col-sm-6">
+                            <img src="assets/img/images4/motherday_gift/Plant.jpg"
+                                class="img_fluid img_fort">
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Porfolio  -->
+
+<!-- Products Start -->
+<div class="container-fluid pt-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2">Top Trending</span></h2>
+    </div>
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1" *ngFor="let products of products | slice: 10:18">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" [src]="products.picture" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">{{products.name}}</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6>${{products.price}}</h6>
+                        <h6 class="text-muted ml-2"><del>${{(products.price * 1.2).toFixed(2)}}</del></h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a routerLink="/Detail/{{products.id}}" class="btn btn-sm text-dark p-0"><i
+                            class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <a href="" class="btn btn-sm text-dark p-0"><i
+                            class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products End -->

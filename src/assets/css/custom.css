@@ -1,0 +1,50 @@
+
+/* map */
+
+.map_site{
+    height: 300px;
+    width: 90%;
+}
+/* footer */
+.Quick{
+    margin-top: 40px;
+}
+.Quick__text{
+    font-size: 25px;
+}
+/* portfolio */
+
+
+.text_portfolio h2{
+    font-weight: 700;
+    font-size: 2 rem;
+    font-style: inherit;
+    padding-bottom: 15px;
+    
+}
+.portfolio .image_app{
+    margin-bottom: 20px;
+    
+
+}
+.portfolio .image_app button{
+    color: #dc3545;
+
+}
+
+
+
+
+
+
+/* Blog */
+.blog_home_title{
+    margin-left: 5px;
+}
+.clearfix__space{
+    left: 75px;
+    top: 10px;
+}
+
+
+/* Blog */
